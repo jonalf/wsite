@@ -10,8 +10,8 @@ var loadWelcome = function() {
 
     var i = makeIt( 'img' );    
     i.setAttribute( 'src', 'pics/front.jpg' );
-    i.classList.add( 'img-rounded', 'img-responsive' );
-
+    i.classList.add( 'img-rounded', 'img-responsive', 'center-block' );
+    
     j = document.querySelectorAll( '.jumbotron' )[0];
     j.innerHTML = '';
     j.appendChild( i );
@@ -36,7 +36,7 @@ var loadPics = function() {
     var rightIcon = makeIt( 'span' );
 
     div1.setAttribute( 'id', 'carousel-example-generic' );
-    div1.setAttribute( 'data-ride', 'carousel' );
+    div1.setAttribute( 'data-ride', 'carousel', 'containter' );
     div1.classList.add( 'carousel', 'slide' );
     
     indicators.classList.add( 'carousel-indicators' );
