@@ -6,6 +6,8 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <script src="jquery-1.8.3.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="loadbox.js"></script>
+
 
   <title>JonAlf and Jamie</title>
 </head>
@@ -13,7 +15,7 @@
 <body>
   <div class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <div class="navbar-brand">JonAlf & Jamie</div>
+      <a class="navbar-brand" onclick="loadWelcome()">JonAlf & Jamie</a>
       
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 	<span class="icon-bar"></span>
@@ -24,10 +26,10 @@
 
       <div class="collapse navbar-collapse navHeaderCollapse">
 	<ul class="nav navbar-nav">
-	  <li><a>Our Story</a></li>
-	  <li><a>Pictures</a></li>
-	  <li><a>Registry</a></li>
-	  <li><a>Ceremony & Reception</a></li>
+	  <li><a onclick="loadStory()">Our Story</a></li>
+	  <li><a onclick="loadPics()">Pictures</a></li>
+	  <li><a onclick="loadRegistry()">Registry</a></li>
+	  <li><a onclick="loadInfo()">Ceremony & Reception</a></li>
 	</ul>
       </div>
     </div>
@@ -35,10 +37,10 @@
 
   <div class="container">
     <div class="jumbotron">
-      HI EVERYBODY!
+      HI EVERYBODY!<br>
+<!--      <img src="pics/p0.jpeg" class="img-rounded img-responsive"> -->
     </div>
-  </div>
-
+  </div> 
 
 </body>
 
