@@ -19,11 +19,28 @@ var loadWelcome = function() {
 
 var loadStory = function() {
 
-    s = "<center>We met, it was pretty cool, now we're getting married!</center>"
+    s = "<center>We met, it was pretty cool, now we're getting married!</center>";
 
     j = document.querySelectorAll( '.jumbotron' )[0];
     j.innerHTML = s;
 }
+
+var loadRegistry = function() {
+
+    s = "<center>Stuff! We want some, will you give it to us?</center>";
+
+    j = document.querySelectorAll( '.jumbotron' )[0];
+    j.innerHTML = s;
+}
+
+var loadInfo = function() {
+
+    s = "<center>There's a time and a place for everything</center>";
+
+    j = document.querySelectorAll( '.jumbotron' )[0];
+    j.innerHTML = s;
+}
+
 
 var loadPics = function() {
 
@@ -44,7 +61,7 @@ var loadPics = function() {
     div2.classList.add( 'carousel-inner' );
 
     left.setAttribute( 'href', '#carousel-example-generic' );
-    left.setAttribute( 'data-slide', 'previous' );
+    left.setAttribute( 'data-slide', 'prev' );
     left.classList.add( 'left', 'carousel-control' );
 
     right.setAttribute( 'href', '#carousel-example-generic' );
@@ -73,6 +90,7 @@ var loadPics = function() {
 	if ( i == 0 )
 	    item.classList.add( 'active' );
 	image.setAttribute( 'src', 'pics/' + i + '.jpg' );
+	image.classList.add( 'img-rounded', 'img-responsive' ); 
 	item.appendChild( image );
 	div2.appendChild( item );			
     }
