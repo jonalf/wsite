@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.carousel-inner {
+    opacity: 1;
+}
+
 .carousel-control.left {
     background-image: none;
 }
@@ -12,17 +16,30 @@
 }
 
 body {
-    background-color: #780068;
+    background:url("pics/leaves2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #993333;
+}
+
+.content {
+    background-color: #AE66A4;
+    opacity: .8;
+    height: 1500px;
+    border-radius: 10px;
+    color: white;
 }
 
 .jumbotron {
     background-color: #AE66A4;
-    color: #E67248;
+    opacity: .8;
+/*    height: 1500px;*/
+    color: white;
 }
 
 .navbar {
-    background-color: #FFF58F;
-    border-color: #FFF58F;
+    background-color: #993333;
+    border-color: #993333;
  }
 
 .navbar-default
