@@ -33,7 +33,7 @@ body {
 .jumbotron {
     background-color: #AE66A4;
     opacity: .8;
-/*    height: 1500px;*/
+    min-height: 600px;
     color: white;
 }
 
