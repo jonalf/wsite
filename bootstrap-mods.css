@@ -17,24 +17,25 @@ body {
 
 .jumbotron {
     background-color: #AE66A4;
+    color: #E67248;
 }
 
 .navbar {
-    background-color: black;
-    border-color: black;
+    background-color: #FFF58F;
+    border-color: #FFF58F;
  }
 
 .navbar-default
 .navbar-brand {
-    color: white;
+    color: black;
 }
 
 .navbar-default 
 .navbar-nav>li>a {
-    color: white;
+    color: black;
 }
 
 .navbar-default 
 .navbar-nav>li>a:hover {
-    color: gray;
+    color: white;
 }
