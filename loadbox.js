@@ -120,7 +120,7 @@ var loadPics = function() {
 	div2.appendChild( item );			
     }
 
-    div1.appendChild( indicators );
+//    div1.appendChild( indicators );
     div1.appendChild( div2 );
     div1.appendChild( left );
     div1.appendChild( right );    
