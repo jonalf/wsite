@@ -19,7 +19,7 @@ body {
     background:url("pics/leaves2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #993333;
+    background-color: rgba(255,153,102,0.8);
 }
 
 .jumbotron {
@@ -47,10 +47,6 @@ body {
 .navbar-default 
 .navbar-nav>li>a:hover {
     color: white;
-}
-
-.navbar-static-bottom {
-    margin-bottom: 0px;
 }
 
 body,

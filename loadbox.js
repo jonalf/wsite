@@ -1,4 +1,4 @@
-var NUMPICS = 3;
+var NUMPICS = 21;
 
 
 var makeIt = function( type ) {
