@@ -59,11 +59,23 @@ var loadRegistry = function() {
 }
 
 var loadInfo = function() {
+    //s = "<center>There's a time and a place for everything</center>";
+    var coralMap = makeIt( 'iframe');
 
-    s = "<center>There's a time and a place for everything</center>";
+    console.log( coralMap );
+
+    coralMap.setAttribute('width', '600');
+    coralMap.setAttribute('height', '450');
+    coralMap.setAttribute('frameborder', '0');
+    coralMap.setAttribute('style', 'border:0');
+//    coralMap.setAttribute('src', 'https://www.google.com/maps/embed/v1/place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&zoom=15&center=40.6543124,-73.6064379&key=AIzaSyB3kNA-w88agXsQNfntVoF7T--Di5emzNw');
+//place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&
+    coralMap.setAttribute('src', 'https://www.google.com/maps/embed/v1/place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&zoom=14&center=40.6553354,-73.6064379&key=AIzaSyB3kNA-w88agXsQNfntVoF7T--Di5emzNw');
 
     j = document.querySelectorAll( '.jumbotron' )[0];
-    j.innerHTML = s;
+    //j.innerHTML = s;
+    j.innerHTML = '';
+    j.appendChild( coralMap );
 }
 
 
