@@ -59,25 +59,64 @@ var loadRegistry = function() {
 }
 
 var loadInfo = function() {
-    //s = "<center>There's a time and a place for everything</center>";
-    var coralMap = makeIt( 'iframe');
+    
+    var coralMapDiv = makeIt('div');
+    coralMapDiv.setAttribute('id', 'coralmapdiv');
+    coralMapDiv.style.height = '400px';
 
-    console.log( coralMap );
+    var hotelMapDiv = makeIt('div');
+    hotelMapDiv.setAttribute('id', 'hotelmapdiv');
+    hotelMapDiv.style.height = '400px';
+    
+    var coralInfoDiv = makeIt('div');
+    
+    coralInfoText = 'The ceremony and reception will be held at:<br>';
+    coralInfoText+= '<a target="_blank" href="http://www.google.com/maps/place/Coral+House/@40.651724,-73.604099,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b7fef1177cd:0xf6d9ad7cc7bbe47">';
+    coralInfoText+= 'The Coral House</a><br>70 Mulburn Ave<br>Baldwin, NY 11510';
+    coralInfoDiv.innerHTML = coralInfoText;
+    
 
-    coralMap.setAttribute('width', '600');
-    coralMap.setAttribute('height', '450');
-    coralMap.setAttribute('frameborder', '0');
-    coralMap.setAttribute('style', 'border:0');
-//    coralMap.setAttribute('src', 'https://www.google.com/maps/embed/v1/place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&zoom=15&center=40.6543124,-73.6064379&key=AIzaSyB3kNA-w88agXsQNfntVoF7T--Di5emzNw');
-//place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&
-    coralMap.setAttribute('src', 'https://www.google.com/maps/embed/v1/place?q=Coral+House,+Milburn+Avenue,+Baldwin,+NY,+United+States&zoom=14&center=40.6553354,-73.6064379&key=AIzaSyB3kNA-w88agXsQNfntVoF7T--Di5emzNw');
+    var hotelInfoDiv = makeIt('div');
+    var hlink = makeIt('a');
+    hotelText = 'We have reserverd a block of rooms at:<br>';
+    hotelText+= '<a target="_blank" href="http://www.google.com/maps/place/Ramada+Rockville+Centre/@40.656536,-73.623273,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b65cd264ee9:0x95c9f465562eb230">';
+    hotelText+= 'Ramada Rockville Centre</a><br>1000 Sunrise Highway<br>Rockville Centre, NY 11570<br>(516) 678-1100';
+    hotelInfoDiv.innerHTML = hotelText;
 
     j = document.querySelectorAll( '.jumbotron' )[0];
-    //j.innerHTML = s;
     j.innerHTML = '';
-    j.appendChild( coralMap );
+    j.appendChild( coralInfoDiv );
+    j.appendChild( coralMapDiv );
+    j.appendChild( hotelInfoDiv );
+    j.appendChild( hotelMapDiv );
+
+    loadMaps();
+    console.log( j );
 }
 
+var loadMaps = function() {
+    var cMapOptions = {
+        center: new google.maps.LatLng(40.6543124, -73.6064379),
+        zoom: 16
+    };
+    var cMap = new google.maps.Map(document.getElementById("coralmapdiv"), cMapOptions);
+    var cMarker = new google.maps.Marker({
+	position: new google.maps.LatLng(40.651724,-73.604099),
+	map: cMap,
+	title:"Coral House"
+    });
+
+    var hMapOptions = {
+        center: new google.maps.LatLng(40.656536,-73.623273),
+        zoom: 16
+    };
+    var hMap = new google.maps.Map(document.getElementById("hotelmapdiv"), hMapOptions);
+    var hMarker = new google.maps.Marker({
+	position: new google.maps.LatLng(40.656536,-73.623273),
+	map: hMap,
+	title:"Ramada Rockville Centre"
+    });
+}
 
 var loadPics = function() {
 
