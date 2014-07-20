@@ -7,7 +7,7 @@ var makeIt = function( type ) {
 }
 
 var loadWelcome = function() {
-    var s = "<center><h2>JonAlf and Jamie's toally awesome wedding website!<br><br>Please join us on:</h2><h1>November 15, 2014<br>at 12pm</h1>for an emotional display of tears and promises of eternal love, followed by the signing of some boring legal documents, finished off with some food, booze and the dance party of the century!<br></center>";
+    var s = "<center><h2>JonAlf and Jamie's totally awesome wedding website!<br><br>Please join us on:</h2><h1>November 15, 2014<br>at 12pm</h1>for an emotional display of tears and promises of eternal love, followed by the signing of some boring legal documents, finished off with some food, booze, and the dance party of the century!<br></center>";
     
     var i = makeIt( 'img' );    
     i.setAttribute( 'src', 'pics/front.jpg' );
@@ -22,9 +22,9 @@ var loadStory = function() {
 
 //    s = "<center>We met, it was pretty cool, now we're getting married!</center>";
 
-    var met = "Alf and Jamie met back in November 2011 through the magic of online dating. The two spent their first date getting drinks at a bar downtown, followed by late night burgers at a diner. Alf was immediately smitten. Unfortunately for Alf, Jamie informed him that they could not date because she was about to leave town to perform in a show, and therefore couldn't be tied down. But even though Jamie made it clear that the pair had an uncertain future, she couldn't help from calling him while she was away. For six weeks while Jamie was out of town, the two spoke everyday and developed a deep friendship. At the end of the six weeks, as Jamie boarded a plane back to New York, she knew she was helplessly in love with Alf. Though she refused to admit it to him for another few months. The two have been inseparable ever since, and are excited to celebrate their union this November, three years to the day from their first date.<br>";
+    var met = "Alf and Jamie met back in November 2011 through the magic of online dating. The two spent their first date getting drinks at a bar downtown, followed by late-night burgers at a diner. Alf was immediately smitten. Unfortunately for Alf, Jamie informed him that they could not date because she was about to leave town to perform in a show, and therefore couldn't be tied down. But even though Jamie made it clear that the pair had an uncertain future, she couldn't help from calling him while she was away. For six weeks while Jamie was out of town, the two spoke everyday and developed a deep friendship. At the end of the six weeks, as Jamie boarded a plane back to New York, she knew she was helplessly in love with Alf (though she refused to admit it to him for another few months). The two have been inseparable ever since and are excited to celebrate their union this November, three years to the day from their first date.<br>";
 
-    var prop = "One day in October, Alf suggested to Jamie that they have a date night that Saturday. He would make her a delicious fish dinner and they'd open the good bottle of red wine. Jamie was immediately suspicious. Jamie spent the week trying not to anticipate an impending proposal, and playing it cool. As she left for work on Saturday, she noticed the apartment was a mess. She decided that if the apartment was clean when she returned that evening, it meant he was likely to propose. Upon returning from work she noticed the apartment was still messy, signaling to her that there would be no proposal tonight. As the evening progressed the two enjoyed their relaxing night in of fish and red wine and <i>Family Guy</i>. And just as Jamie was getting absorbed in the current episode of <i>Family Guy</i>, suddenly Alf was on one knee asking her to marry him. Jamie screamed and cried, wiped her snot all over his shirt, and said yes. They then preceded to spend the next two hours in separate rooms as they called everyone they know to announce their upcoming nuptials.";
+    var prop = "One day in October, Alf suggested to Jamie that they have a date night that Saturday. He would make her a delicious fish dinner and they'd open the good bottle of red wine. Jamie was immediately suspicious. Jamie spent the week trying not to anticipate an impending proposal and playing it cool. As she left for work on Saturday, she noticed the apartment was a mess. She decided that if the apartment was clean when she returned that evening, it meant he was likely to propose. Upon returning from work, she noticed the apartment was still messy, signaling to her that there would be no proposal tonight. As the evening progressed, the two enjoyed their relaxing night of fish and red wine. And just as Jamie was getting absorbed in the current episode of <i>Family Guy</i>, suddenly Alf was on one knee asking her to marry him. Jamie screamed and cried, wiped her snot all over his shirt, and said yes. They then proceded to spend the next two hours in separate rooms as they called everyone they knew to announce their upcoming nuptials.";
 
     var i1 = makeIt( 'img' );    
     i1.setAttribute( 'src', 'pics/meet.jpg' );
@@ -53,7 +53,7 @@ var loadStory = function() {
 var loadRegistry = function() {
 
     //s = "<center>Stuff! We want some, will you give it to us?</center>";
-    s = '<center>We have created a registery at Bed, Bath & Beyond.<br>Follow the link below to access it:<br><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541370494&pwsurl=">Bed, Bath & Beyond</a><hr>~OR~<br>We would also graciously accept contributions towrds our honeymoon and a few items that we felt were too expensive to ask for individually.</center>'
+    s = '<center>We have created a registry at Bed, Bath & Beyond.<br>Follow the link below to access it:<br><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541370494&pwsurl=">Bed, Bath & Beyond</a><hr>~OR~<br>We would also graciously accept contributions toward our honeymoon and a few items that we felt were too expensive to ask for individually.</center>'
     j = document.querySelectorAll( '.jumbotron' )[0];
     j.innerHTML = s;
 }
@@ -69,10 +69,10 @@ var loadInfo = function() {
     hotelMapDiv.style.height = '400px';
     
     var coralInfoDiv = makeIt('div');
-    coralInfoText = '<center><h2>Schedule of events:</h2><br>Ceremonny: 12pm<br>Coctail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr>'
+    coralInfoText = '<center><h2>Schedule of Events:</h2><br>Ceremony: 12pm<br>Cocktail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr>'
     coralInfoText+= 'The ceremony and reception will be held at:<br>';
     coralInfoText+= '<a target="_blank" href="http://www.google.com/maps/place/Coral+House/@40.651724,-73.604099,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b7fef1177cd:0xf6d9ad7cc7bbe47">';
-    coralInfoText+= 'The Coral House</a><br>70 Mulburn Ave<br>Baldwin, NY 11510</center>';
+    coralInfoText+= 'The Coral House</a><br>70 Milburn Ave<br>Baldwin, NY 11510</center>';
     coralInfoDiv.classList.add('info');
     coralInfoDiv.innerHTML = coralInfoText;
     
