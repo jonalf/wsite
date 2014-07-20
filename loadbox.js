@@ -53,7 +53,7 @@ var loadStory = function() {
 var loadRegistry = function() {
 
     //s = "<center>Stuff! We want some, will you give it to us?</center>";
-    s = '<center>If you would like to get us a gift, we have created a registery at Bed, Bath & Beyond.<br>Follow the link below to access the registry:<br><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541370494&pwsurl=">Bed, Bath & Beyond</a><hr>We would also graciously accept contributions towrds our honeymoon and a few items that we felt were too expensive to ask for individually.</center>'
+    s = '<center>We have created a registery at Bed, Bath & Beyond.<br>Follow the link below to access it:<br><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541370494&pwsurl=">Bed, Bath & Beyond</a><hr>We would also graciously accept contributions towrds our honeymoon and a few items that we felt were too expensive to ask for individually.</center>'
     j = document.querySelectorAll( '.jumbotron' )[0];
     j.innerHTML = s;
 }
