@@ -64,3 +64,18 @@ h6,
 .h6 {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
+
+
+.info {
+    line-height: normal;
+}
+
+.info>center>a {
+    color: white;
+    text-decoration: underline;
+}
+
+.jumbotron>center>a {
+    color: white;
+    text-decoration: underline;
+}

@@ -52,8 +52,8 @@ var loadStory = function() {
 
 var loadRegistry = function() {
 
-    s = "<center>Stuff! We want some, will you give it to us?</center>";
-
+    //s = "<center>Stuff! We want some, will you give it to us?</center>";
+    s = '<center>If you would like to get us a gift, we have created a registery at Bed, Bath & Beyond.<br>Follow the link below to access the registry:<br><a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541370494&pwsurl=">Bed, Bath & Beyond</a><hr>We would also graciously accept contributions towrds our honeymoon and a few items that we felt were too expensive to ask for individually.</center>'
     j = document.querySelectorAll( '.jumbotron' )[0];
     j.innerHTML = s;
 }
@@ -69,18 +69,19 @@ var loadInfo = function() {
     hotelMapDiv.style.height = '400px';
     
     var coralInfoDiv = makeIt('div');
-    
-    coralInfoText = 'The ceremony and reception will be held at:<br>';
+    coralInfoText = '<center>The ceremony and reception will be held at:<br>';
     coralInfoText+= '<a target="_blank" href="http://www.google.com/maps/place/Coral+House/@40.651724,-73.604099,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b7fef1177cd:0xf6d9ad7cc7bbe47">';
-    coralInfoText+= 'The Coral House</a><br>70 Mulburn Ave<br>Baldwin, NY 11510';
+    coralInfoText+= 'The Coral House</a><br>70 Mulburn Ave<br>Baldwin, NY 11510</center>';
+    coralInfoDiv.classList.add('info');
     coralInfoDiv.innerHTML = coralInfoText;
     
 
     var hotelInfoDiv = makeIt('div');
     var hlink = makeIt('a');
-    hotelText = 'We have reserverd a block of rooms at:<br>';
+    hotelText = '<hr><center>We have reserverd a block of rooms at:<br>';
     hotelText+= '<a target="_blank" href="http://www.google.com/maps/place/Ramada+Rockville+Centre/@40.656536,-73.623273,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b65cd264ee9:0x95c9f465562eb230">';
-    hotelText+= 'Ramada Rockville Centre</a><br>1000 Sunrise Highway<br>Rockville Centre, NY 11570<br>(516) 678-1100';
+    hotelText+= 'Ramada Rockville Centre</a><br>1000 Sunrise Highway<br>Rockville Centre, NY 11570<br>(516) 678-1100</center>';
+    hotelInfoDiv.classList.add('info');
     hotelInfoDiv.innerHTML = hotelText;
 
     j = document.querySelectorAll( '.jumbotron' )[0];
