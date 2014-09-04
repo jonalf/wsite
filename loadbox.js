@@ -69,7 +69,7 @@ var loadInfo = function() {
     hotelMapDiv.style.height = '400px';
     
     var coralInfoDiv = makeIt('div');
-    coralInfoText = '<center><h2>Schedule of Events:</h2><br>Ceremony: 12pm<br>Cocktail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr>'
+    coralInfoText = '<center><h2>Schedule of Events:</h2><br>Ceremony: 11:45am<br>Cocktail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr>'
     coralInfoText+= 'The ceremony and reception will be held at:<br>';
     coralInfoText+= '<a target="_blank" href="http://www.google.com/maps/place/Coral+House/@40.651724,-73.604099,17z/data=!3m1!4b1!4m2!3m1!1s0x89c27b7fef1177cd:0xf6d9ad7cc7bbe47">';
     coralInfoText+= 'The Coral House</a><br>70 Milburn Ave<br>Baldwin, NY 11510</center>';
