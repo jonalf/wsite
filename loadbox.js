@@ -69,9 +69,9 @@ var loadInfo = function() {
     hotelMapDiv.style.height = '400px';
     
     var coralInfoDiv = makeIt('div');
-    coralInfoText = '<center><h2>Schedule of Events:</h2><br>Ceremony: 11:45am<br>Cocktail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr></center>';
+    coralInfoText = '<center><h2>Schedule of Events:</h2><br>Ceremony: 12pm<br>Cocktail Hour: 12:30pm<br>Lunch Reception: 1:30 - 5:30pm<br><hr></center>';
 
-    coralInfoText+= '<center><h2>LIRR Train Schedules</h2><br></center>';
+    coralInfoText+= '<center><h2>LIRR Train Schedules and Taxis</h2><br></center>';
     coralInfoText+= 'The Coral House is about a 5 minute walk from the Baldwin station on the Long Island Railrod (LIRR). These are the train times that will get you to/from the Wedding on time: <br><br>'
     coralInfoText+= 'Trains From Penn Station to Baldwin on Saturday, November 15th:<br>'
     coralInfoText+= 'Departs: 10:25am, Arrives: 11:09am<br>';
@@ -80,7 +80,9 @@ var loadInfo = function() {
     coralInfoText+= 'Departs: 4pm, Arrives: 4:44pm<br>';
     coralInfoText+= 'Departs: 5pm, Arrives: 5:45pm<br>';
     coralInfoText+= 'Departs: 5:30pm, Arrives: 6:12pm<br>';
-    coralInfoText+= 'Departs: 6pm, Arrives: 6:45pm<br>';
+    coralInfoText+= 'Departs: 6pm, Arrives: 6:45pm<br><br>';
+    coralInfoText+= 'If you wish to take a taxi we suggest using All Island Taxi, they can be reached at: (516)-678-3060<br>'
+    coralInfoText+= 'We will be providing shuttle bus service at the end of the reception (5:30pm). Shuttles will be available to take guests to the Ramada or the LIRR train station.'
     coralInfoText+= '<hr>';
     
     coralInfoText+= '<center>The ceremony and reception will be held at:<br>';    
